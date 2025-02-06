@@ -12,8 +12,11 @@ export const App = () => {
   const [thxShow, setThx] = useState(LS.getItem(LSKeys.ShowThx, false));
 
   const submit = () => {
+    window.gtag('event', 'connect_click', {
+      variant_name: 'ghk_4283_2',
+    });
     setLoading(true);
-    // LS.setItem(LSKeys.ShowThx, true);
+    LS.setItem(LSKeys.ShowThx, true);
     setThx(true);
     setLoading(false);
   };
@@ -59,6 +62,11 @@ export const App = () => {
             href="https://alfabank.st/site-upload/aa/d9/1677/Consent_3022025.pdf"
             style={{ color: '#2A77EF', textDecoration: 'none' }}
             target="_blank"
+            onClick={() => {
+              window.gtag('event', 'agreement_doc_click', {
+                variant_name: 'ghk_4283_2',
+              });
+            }}
           >
             обработку персональных данных
           </a>
