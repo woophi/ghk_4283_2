@@ -57,7 +57,7 @@ export const App = () => {
         </div>
 
         <Typography.Text view="primary-small" color="secondary">
-          Нажимая «Подключить к банку», вы соглашаетесь на{' '}
+          Нажимая «Подключить Госуслуги», вы соглашаетесь на{' '}
           <a
             href="https://alfabank.st/site-upload/aa/d9/1677/Consent_3022025.pdf"
             style={{ color: '#2A77EF', textDecoration: 'none' }}
